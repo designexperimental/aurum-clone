@@ -1,0 +1,44 @@
+header {
+	width: 100%;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+/* ---------- TOP MENU ---------- */
+
+.row-top-menu {
+	background-color: #222;
+	color: #afafaf;
+	font-size: 12px;
+}
+
+.top-menu {
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ---------- HEADER MENU ---------- */
+
+.row-header-menu {
+	background-color: lightgrey;
+}
+
+.header-menu {
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-menu .logo img {
+	height: 20px;
+}
+
+.header-menu nav ul li {
+	display: inline;
+}
