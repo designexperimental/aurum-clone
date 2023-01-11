@@ -7,6 +7,11 @@ header {
 	margin: 0 auto;
 }
 
+.envato {
+	height: 54px;
+	background-color: #ccc;
+}
+
 /* ---------- TOP MENU ---------- */
 
 .row-top-menu {
@@ -52,14 +57,26 @@ header {
 /* ---------- HEADER MENU ---------- */
 
 .row-header-menu {
-	background-color: lightgrey;
+	background-color: white;
+	border-bottom: 1px solid #eee;
 }
 
 .header-menu {
 	height: 70px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.header-menu .logo,
+.header-menu .main-menu {
+	display: flex;
+	align-items: center;
+}
+
+.header-menu .main-menu {
+	margin-left: 60px;
 }
 
 .header-menu .logo img {
@@ -72,12 +89,23 @@ header {
 	padding: 0 25px 0 15px;
 }
 
+.header-menu nav ul li a.active {
+	padding-bottom: 2px;
+	border-bottom: 2px solid black;
+}
+
 .header-menu a {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 
 	color: #4d4d4d;
 }
 
 .header-menu ul li:hover {
-	background-color: white;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.header-links .fa-solid {
+	font-size: 24px;
+	margin-left: 30px;
 }
