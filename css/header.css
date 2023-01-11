@@ -31,6 +31,24 @@ header {
 	height: 16px;
 }
 
+.top-menu a {
+	color: #afafaf;
+	text-decoration: none;
+}
+
+.top-menu a:hover {
+	color: white;
+}
+
+.top-menu-separator {
+	margin: 10px;
+}
+
+.top-menu img {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
 /* ---------- HEADER MENU ---------- */
 
 .row-header-menu {
@@ -49,5 +67,17 @@ header {
 }
 
 .header-menu nav ul li {
-	display: inline;
+	display: inline-block;
+	line-height: 70px;
+	padding: 0 25px 0 15px;
+}
+
+.header-menu a {
+	border: 1px solid red;
+
+	color: #4d4d4d;
+}
+
+.header-menu ul li:hover {
+	background-color: white;
 }
