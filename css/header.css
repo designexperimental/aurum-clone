@@ -63,6 +63,8 @@ header {
 
 .header-menu {
 	height: 70px;
+	text-transform: uppercase;
+	font-weight: 300;
 
 	display: flex;
 	justify-content: space-between;
@@ -108,4 +110,22 @@ header {
 .header-links .fa-solid {
 	font-size: 24px;
 	margin-left: 30px;
+}
+
+/* ---------- BANNER ---------- */
+
+.row-banner {
+	margin: 25px 0;
+	height: 500px;
+
+	background-image: url("https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/bg-2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+
+.banner {
+	border: 1px solid red;
+	/* compensação temporária de 2pxs da borda superior e inferior */
+	height: 498px;
 }
