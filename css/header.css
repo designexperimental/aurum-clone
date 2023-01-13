@@ -126,6 +126,44 @@ header {
 
 .banner {
 	border: 1px solid red;
-	/* compensação temporária de 2pxs da borda superior e inferior */
-	height: 498px;
+	height: 500px;
+}
+
+/* ---------- TRENDING ---------- */
+
+.trending h2 {
+	font-size: 1.875rem;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.trending h2 small {
+	font-size: 1rem;
+	display: block;
+	margin-top: 8px;
+}
+
+.trending .trending-title .dash {
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 2px;
+	margin-top: 20px;
+	background-color: #222;
+}
+
+.shop-list,
+.shop-item,
+.item-image {
+	border: 1px solid red;
+	margin: 10px 0;
+}
+
+.item-image a,
+.item-image img {
+	border: 1px solid blue;
+	margin: 10px 0;
+
+	width: 100px;
+	height: 50px;
 }
