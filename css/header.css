@@ -1,15 +1,11 @@
-header {
-	width: 100%;
-}
-
-.container {
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
 .envato {
 	height: 54px;
 	background-color: #ccc;
+}
+
+/* HEADER */
+header {
+	width: 100%;
 }
 
 /* ---------- TOP MENU ---------- */

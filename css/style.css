@@ -64,3 +64,8 @@ h5 {
 h6 {
 	font-size: 1rem;
 }
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}

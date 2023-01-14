@@ -1,0 +1,208 @@
+body {
+	background-color: #eee;
+}
+
+/* ---------- HEADER ---------- */
+
+header .row:nth-child(1) {
+	background-color: lightblue;
+}
+
+header .row:nth-child(2) {
+	background-color: lightcoral;
+}
+
+.header-top {
+	border: 1px solid red;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-menu {
+	border: 1px solid red;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .main-menu {
+	margin-left: 60px;
+}
+
+/* ---------- BANNER ---------- */
+
+.banner {
+	background-color: lightgoldenrodyellow;
+}
+
+.banner .content {
+	border: 1px solid red;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ---------- TRENDING ---------- */
+
+.trending {
+	margin-top: 20px;
+}
+
+.trending .title {
+	background-color: lightgreen;
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+}
+
+.trending .item-group {
+	background-color: lightpink;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.trending .item-group .item {
+	border: 1px solid red;
+	width: 263px;
+	height: 100px;
+}
+
+/* ---------- CATEGORY ---------- */
+
+.category {
+	background-color: lightsalmon;
+	margin-top: 20px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.category .item {
+	border: 1px solid red;
+	width: 360px;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ---------- PROMOTIONAL ---------- */
+
+.promotional {
+	background-color: lightseagreen;
+	margin-top: 20px;
+
+	height: 100px;
+	padding: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ---------- BEST-SELLERS ---------- */
+
+.best-sellers {
+	margin-top: 20px;
+	background-color: lightskyblue;
+}
+
+.best-sellers .title {
+	height: 100px;
+
+	display: flex;
+	align-items: center;
+}
+
+.best-sellers .item-group {
+	background-color: lightsteelblue;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.best-sellers .item-group .item {
+	border: 1px solid red;
+	width: 263px;
+	height: 100px;
+}
+
+/* ---------- WIDGETS ---------- */
+
+.widgets {
+	margin-top: 20px;
+	background-color: lightpink;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.widgets .item {
+	border: 1px solid red;
+	width: 263px;
+	height: 100px;
+}
+
+/* ---------- CAROUSEL ---------- */
+
+.carousel {
+	margin-top: 20px;
+	background-color: lightyellow;
+}
+
+.carousel .item-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.carousel .item-group .item {
+	border: 1px solid red;
+	width: 182px;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer .row:nth-child(1) {
+	background-color: lightblue;
+}
+
+footer .row:nth-child(2) {
+	background-color: lightcoral;
+}
+
+footer .footer-menu {
+	border: 1px solid red;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .bottom {
+	border: 1px solid red;
+	height: 100px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
