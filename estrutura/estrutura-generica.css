@@ -181,12 +181,16 @@ header .main-menu {
 
 /* ---------- FOOTER ---------- */
 
+footer {
+	margin-top: 20px;
+}
+
 footer .row:nth-child(1) {
-	background-color: lightblue;
+	background-color: lightcoral;
 }
 
 footer .row:nth-child(2) {
-	background-color: lightcoral;
+	background-color: lightblue;
 }
 
 footer .footer-menu {
