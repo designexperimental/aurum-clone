@@ -1,0 +1,108 @@
+/* ---------- TYPOGRAPHY ---------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*
+Roboto
+	Light 300
+	Light 300 Italic
+	Regular 400
+	Regular 400Italic
+	Bold 700
+	Bold 700 Italic
+Roboto Condensed
+	Light 300
+	Light 300Italic
+	Regular 400
+	Regular 400 Italic
+	Bold 700
+	Bold 700 Italic
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* GLOBAL VARIABLES */
+
+/* https://blog.timonwa.com/all-vs-root-vs-html-vs-body-selectors */
+
+:root {
+	--primary-color: blue;
+	--bs-blue: #0d6efd;
+	--bs-indigo: #6610f2;
+	--bs-purple: #6f42c1;
+	--bs-pink: #d63384;
+	--bs-red: #dc3545;
+	--bs-orange: #fd7e14;
+	--bs-yellow: #ffc107;
+	--bs-green: #198754;
+	--bs-teal: #20c997;
+	--bs-cyan: #0dcaf0;
+	--bs-white: #fff;
+	--bs-gray: #6c757d;
+	--bs-gray-dark: #343a40;
+	--bs-primary: #0d6efd;
+	--bs-secondary: #6c757d;
+	--bs-success: #198754;
+	--bs-info: #0dcaf0;
+	--bs-warning: #ffc107;
+	--bs-danger: #dc3545;
+	--bs-light: #f8f9fa;
+	--bs-dark: #212529;
+}
+
+html,
+body {
+	/* background-color: var(--primary-color); */
+	font-family: "Roboto Condensed", sans-serif;
+	color: #222;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+/* ---------- LAYOUT ---------- */
+
+.container-fluid {
+	width: 100%;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
