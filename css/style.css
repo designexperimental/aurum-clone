@@ -118,13 +118,15 @@
 	margin-top: 50px;
 }
 
-.trending h2 {
+.trending h2,
+.promotional h2 {
 	font-size: 1.875rem;
 	text-transform: uppercase;
 	font-weight: 300;
 }
 
-.trending h2 small {
+.trending h2 small,
+.promotional h2 small {
 	font-size: 1rem;
 	display: block;
 	margin-top: 8px;
@@ -235,9 +237,176 @@
 	padding: 10px;
 }
 
+/* ---------- PROMOTIONAL ---------- */
+
+.promotional {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	border: 1px solid #eee;
+	color: #333;
+}
+
+.promotional .container {
+	border: 1px solid #eee;
+	padding: 35px 55px;
+	margin: 2px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.promotional button {
+	padding: 6px 12px;
+	border: 0;
+	background-color: black;
+	color: white;
+	font-weight: 500;
+	border-radius: 2px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1.5em;
+	vertical-align: middle;
+}
+
+.promotional button:hover {
+	background-color: #666;
+}
+
+/* ---------- CAROUSEL ---------- */
+
+.carousel {
+	margin: 40px;
+}
+
+.carousel .container ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.carousel .container ul li {
+	margin: 0 15px;
+}
+
+.carousel img {
+	height: 60px;
+}
+
 /* ---------- FOOTER ---------- */
 
 footer {
-	height: 250px;
-	padding: 40px 0;
+	padding: 40px;
+	border-top: 1px solid red;
+	background-color: #222;
+	color: #959595;
+}
+
+.bottom-menu {
+	color: #afafaf;
+	font-size: 12px;
+}
+
+.bottom-menu .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.bottom-menu ul li {
+	display: inline;
+}
+
+.bottom-menu a {
+	color: #afafaf;
+	text-decoration: none;
+}
+
+.bottom-menu a:hover {
+	color: white;
+}
+
+.bottom-menu .separator {
+	margin: 10px;
+}
+
+.bottom-menu img {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/*  */
+
+.bottom-menu .container {
+	margin-top: 20px;
+	padding: 40px 15px 0 15px;
+	border-top: 1px solid #3a3a3a;
+}
+
+footer .copyright {
+	font-size: 14px;
+}
+
+footer .legal {
+	font-size: 12px;
+}
+
+footer h3 {
+	color: #eee;
+}
+
+/* ---------- SOCIAL ---------- */
+
+footer .social ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+footer .social ul li {
+	background-color: #333;
+
+	width: 24px;
+	height: 24px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+footer .social a {
+	color: #afafaf;
+}
+
+/* ---------- ITEMS ---------- */
+
+.redundant .container {
+	display: flex;
+	align-items: initial;
+	justify-content: center;
+}
+
+.redundant .item {
+	width: 360px;
+	padding: 15px;
+
+	text-transform: uppercase;
+}
+
+.redundant .item a {
+	color: #959595;
+}
+
+.redundant .item a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.redundant .item h3 {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0 0 15px;
 }
