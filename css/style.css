@@ -188,33 +188,50 @@
 }
 
 .category-item {
-	background: #c04848; /* fallback */
-
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-
 	width: 360px;
 	height: 500px;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	/* faz a máscara no item */
+	overflow: hidden;
+
+	cursor: pointer;
 }
 
-.category-item:nth-child(1) {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl10-360x500.jpg);
+.category-item {
+	position: relative;
 }
-
-.category-item:nth-child(2) {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image2xxl39-360x500.jpg);
-}
-
-.category-item:nth-child(3) {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl21-360x500.jpg);
-}
-
 .category-item div {
+	position: absolute;
+}
+
+.category-image {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+
+	/* define o estado do efeito inicial */
+	transform: scale(1);
+	transition: all 0.5s ease-out;
+}
+
+.category-item:hover .category-image {
+	/* define o estado do efeito final */
+	transform: scale(1.2);
+	transition: all 0.5s ease-out;
+}
+
+.category-overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+.category-name {
 	height: 54px;
 	padding: 32px 0;
 	border: 2px solid white;
@@ -229,9 +246,11 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	z-index: 2;
 }
 
-.category-item strong {
+.category-name span {
 	border-top: 2px solid white;
 	border-bottom: 2px solid white;
 	padding: 10px;
