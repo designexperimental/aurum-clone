@@ -147,32 +147,65 @@
 
 .trending .shop-list ul {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
 
 .trending .shop-list ul li {
-	border: 1px solid red;
-}
-
-.trending .shop-item img {
 	width: 263px;
+	height: auto;
 }
 
-.trending .item-info {
+/* ---------- TRENDING - IMAGE ----------  */
+
+.shop-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/* ---------- TRENDING - INFOS ----------  */
+
+.item-info {
+	border: 1px solid blue;
 	background-color: #eee;
-	padding: 2px 20px;
+	/* padding: 2px 20px; */
 }
 
-.trending .item-info div {
+.item-info .title {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.trending .item-info h3 {
-	margin: 20px 0;
+.item-info h3 {
+	/* margin: 20px 25px 0 0; */
+	border: 1px solid red;
 	color: #222;
 	font-weight: 300;
+	font-size: 20px;
+}
+
+.item-info .category {
+	border: 1px solid red;
+	color: yellow;
+
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.item-info .icon {
+	border: 1px solid red;
+}
+
+.item-info .price {
+	/* border: 1px solid red; */
+
+	color: #333;
+	font-weight: 300;
+	font-size: 20px;
+
+	/* margin: 20px 25px 0 0; */
 }
 
 /* ---------- CATEGORIES ---------- */
@@ -220,7 +253,7 @@
 
 .category-item:hover .category-image {
 	/* define o estado do efeito final */
-	transform: scale(1.2);
+	transform: scale(1.1);
 	transition: all 0.5s ease-out;
 }
 
@@ -268,7 +301,8 @@
 .promotional .container {
 	border: 1px solid #eee;
 	padding: 35px 55px;
-	margin: 2px;
+	/* espaço entre as bordas */
+	margin: 3px;
 
 	display: flex;
 	justify-content: space-between;
