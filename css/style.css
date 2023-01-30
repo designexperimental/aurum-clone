@@ -90,7 +90,9 @@
 	border-bottom: 2px solid black;
 }
 
-.main-menu .icons .fa-solid {
+/* ---------- ICONS ---------- */
+
+.main-menu .icon i {
 	font-size: 24px;
 	margin-left: 30px;
 }
@@ -167,9 +169,7 @@
 /* ---------- TRENDING - INFOS ----------  */
 
 .item-info {
-	border: 1px solid blue;
-	background-color: #eee;
-	/* padding: 2px 20px; */
+	padding: 20px 20px 0;
 }
 
 .item-info .title {
@@ -179,33 +179,94 @@
 }
 
 .item-info h3 {
-	/* margin: 20px 25px 0 0; */
-	border: 1px solid red;
 	color: #222;
 	font-weight: 300;
 	font-size: 20px;
 }
 
-.item-info .category {
-	border: 1px solid red;
-	color: yellow;
-
-	font-weight: 300;
-	font-size: 13px;
+.item-info .title a:hover h3 {
+	text-decoration: underline;
 }
 
-.item-info .icon {
-	border: 1px solid red;
+.item-info .title a {
+	color: #333;
+}
+
+.item-info .title a:hover .icon {
+	cursor: pointer;
+}
+
+/*  */
+
+.item-info .title {
+	position: relative;
+}
+
+.item-info .tooltip {
+	display: flex;
+	align-items: center;
+}
+
+div.tooltip span {
+	background-color: black;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	margin-right: 24px;
+	padding: 4px 10px;
+	visibility: hidden;
+}
+
+/* triangulo direito */
+div.tooltip span:after {
+	content: "";
+	position: absolute;
+
+	width: 0;
+	height: 0;
+
+	right: -5px;
+	bottom: 50%;
+	margin-bottom: -5px;
+
+	border-left: 5px solid black;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+div:hover.tooltip span {
+	visibility: visible;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+
+/* https://horadecodar.com.br/2020/05/05/como-fazer-um-tooltip-com-css-puro/ */
+/* https://www.w3schools.com/css/css_tooltip.asp */
+
+.item-info .category {
+	margin-top: 5px;
+}
+
+.item-info .category a {
+	color: #888;
+
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.item-info .category a:hover {
+	text-decoration: underline;
 }
 
 .item-info .price {
-	/* border: 1px solid red; */
-
+	margin-top: 15px;
 	color: #333;
 	font-weight: 300;
 	font-size: 20px;
-
-	/* margin: 20px 25px 0 0; */
 }
 
 /* ---------- CATEGORIES ---------- */

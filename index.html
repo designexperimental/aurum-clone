@@ -61,8 +61,8 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="icons">
-						<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+					<div class="icon">
+						<a href=""><i class="icon fa-solid fa-magnifying-glass"></i></a>
 						<a href=""><i class="fa-solid fa-cart-shopping"></i></a>
 					</div>
 				</div>
@@ -103,11 +103,17 @@
 
 						<div class="item-info">
 							<div class="title">
+								<!-- problema aqui: se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) -->
 								<a href=""><h3>PAUL SMITH</h3></a>
-								<a href=""><i class="icon fa-solid fa-plus"></i></a>
+								<div class="tooltip">
+									<a href=""><i class="icon fa-solid fa-plus"></i></a>
+									<span>Add to cart</span>
+								</div>
+								
+
 							</div>
 							<div class="category"><a href="">ACCESSORIES</a></div>
-							<div class="price">$45.00</div>
+							<div class="price">R$ 45.00</div>
 						</div>
 						 
 					</li>
