@@ -141,7 +141,7 @@
 	background-color: #222;
 }
 
-/* ---------- TRENDING - ITEM ----------  */
+/* TRENDING - ITEM */
 
 .trending .shop-list {
 	margin-top: 40px;
@@ -158,7 +158,7 @@
 	height: auto;
 }
 
-/* ---------- TRENDING - IMAGE ----------  */
+/* TRENDING - IMAGE */
 
 .shop-item img {
 	display: block;
@@ -166,7 +166,7 @@
 	height: auto;
 }
 
-/* ---------- TRENDING - INFOS ----------  */
+/* TRENDING - INFOS */
 
 .item-info {
 	padding: 20px 20px 0;
@@ -192,11 +192,7 @@
 	color: #333;
 }
 
-.item-info .title a:hover .icon {
-	cursor: pointer;
-}
-
-/*  */
+/* TRENDING - TOOLTIP */
 
 .item-info .title {
 	position: relative;
@@ -247,6 +243,8 @@ div:hover.tooltip span {
 /* https://horadecodar.com.br/2020/05/05/como-fazer-um-tooltip-com-css-puro/ */
 /* https://www.w3schools.com/css/css_tooltip.asp */
 
+/* TRENDING - CATEGORY */
+
 .item-info .category {
 	margin-top: 5px;
 }
@@ -261,6 +259,8 @@ div:hover.tooltip span {
 .item-info .category a:hover {
 	text-decoration: underline;
 }
+
+/* TRENDING - PRICE */
 
 .item-info .price {
 	margin-top: 15px;
@@ -293,11 +293,9 @@ div:hover.tooltip span {
 	overflow: hidden;
 
 	cursor: pointer;
-}
-
-.category-item {
 	position: relative;
 }
+
 .category-item div {
 	position: absolute;
 }
@@ -354,7 +352,7 @@ div:hover.tooltip span {
 
 .promotional {
 	margin-top: 50px;
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 	border: 1px solid #eee;
 	color: #333;
 }
@@ -385,6 +383,117 @@ div:hover.tooltip span {
 
 .promotional button:hover {
 	background-color: #666;
+}
+
+/* ---------- WIDGETS ---------- */
+
+.widgets {
+	margin-top: 20px;
+}
+
+.widget-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.widget-item {
+	width: 262px;
+	height: auto;
+	border: 1px solid black;
+
+	margin-bottom: 30px;
+	border: 1px solid #eee;
+	padding: 25px 30px;
+	font-weight: 300;
+}
+
+/* WIDGETN ITEM CONTENT */
+
+.widget-item h3 {
+	color: #222;
+	font-size: 24px;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0 1px 0 #fff, 0 2px 0 #eee;
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+}
+
+/*  */
+
+.widget-item ul li {
+	/* border: 1px solid red; */
+	border-bottom: 1px solid #eee;
+
+	display: block;
+
+	width: 100%;
+	/* height: 100px; */
+
+	/* margin-bottom: 10px; */
+
+	margin: 10px 0;
+	padding-bottom: 10px;
+
+	/* se não tiver o pseudo-elemento, ativar o overflow */
+	/* overflow: hidden; */
+}
+
+/* pseudo-elemento para limpar o float da img */
+.widget-item ul li::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.widget-item ul li:last-child {
+	/* background-color: yellow; */
+	border-bottom: none;
+}
+
+/*  */
+
+.widget-item a {
+	/* empurra o preço pra baixo */
+	display: block;
+}
+
+.widget-item a:hover {
+	text-decoration: underline;
+}
+
+.widget-item img {
+	/* border: 1px solid red; */
+	width: 50px;
+	height: auto;
+	/* height: 64px; */
+
+	display: block;
+	float: left;
+
+	margin-right: 10px;
+
+	/* margin-left: -60px; */
+
+	/* vertical-align: middle; */
+}
+
+.widget-item .name {
+	/* border: 1px solid blue; */
+	color: #4d4d4d;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.widget-item .price {
+	/* background-color: yellow; */
+	text-transform: uppercase;
+	color: #afafaf;
+	font-size: 14px;
 }
 
 /* ---------- CAROUSEL ---------- */
@@ -469,7 +578,7 @@ footer h3 {
 	color: #eee;
 }
 
-/* ---------- SOCIAL ---------- */
+/* SOCIAL */
 
 footer .social ul {
 	display: flex;
@@ -495,7 +604,7 @@ footer .social a {
 	color: #afafaf;
 }
 
-/* ---------- ITEMS ---------- */
+/* ITEMS */
 
 .redundant .container {
 	display: flex;
