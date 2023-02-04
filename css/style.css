@@ -550,7 +550,7 @@ footer {
 }
 
 .bottom-menu .separator {
-	margin: 10px;
+	margin: 5px;
 }
 
 .bottom-menu img {
@@ -568,6 +568,15 @@ footer {
 
 footer .copyright {
 	font-size: 14px;
+}
+
+footer .copyright a {
+	color: #4d4d4d;
+}
+
+footer .copyright a:hover {
+	color: #7b599b;
+	text-decoration: underline;
 }
 
 footer .legal {
