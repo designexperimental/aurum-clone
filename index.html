@@ -11,20 +11,15 @@
 		<link rel="stylesheet" href="css/global.css" />
 		<link rel="stylesheet" href="css/style.css" />
 
-		<!-- INSERINDO CODIGO AQUI DO PARTICIPANTE -->
-		<!-- muito legal isso -->
-
 		<!-- FONT AWESOME -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
-		<style></style>
 	</head>
 
 	<body>
 		<!-- HEADER -->
 
 		<header>
-			<div class="top-menu">
+			<div class="top-menu text-tiny">
 				<div class="container">
 					<div>
 						<a href="">LOGIN</a> or <a href="">REGISTER</a><span class="separator">|</span><span id="data"><script src="js/date.js"></script></span>10 de Janeiro de 2023
@@ -44,14 +39,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="main-menu">
+			<div class="main-menu text-regular">
 				<div class="container">
 					<div class="logo">
 						<a href="">
 							<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/logo@2x.png" alt="Aurum" />
 						</a>
 						<nav>
-							<ul>
+							<ul class="">
 								<li><a href="" class="active">HOME</a></li>
 								<li><a href="">SHOP</a></li>
 								<li><a href="">PAGES</a></li>
@@ -79,111 +74,138 @@
 
 		<div class="trending container">
 			<div class="title">
-				<h2>
+				<h2 class="title-2">
 					Trending
-					<small>Most trendy clothes</small>
+					<!-- <small>Most trendy clothes</small> -->
+					<span class="text-regular">Most trendy clothes</span>
 					<span class="dash"></span>
 				</h2>
 			</div>
 			<div class="shop-list">
 				<ul>
+					<button class="control previous"></button>
+					<button class="control next"></button>
 					<li class="shop-item">
 						<a href="">
-							<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image4xxl2-235x300.jpg" alt="" />
+							<img class="image-active" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl1-330x421.jpg" alt="" />
+							<img class="image-hover" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image4xxl2-330x421.jpg" alt="" />
+
+							<div class="add-to-wishlist">
+								<i class="fa-solid fa-heart"></i>
+							</div>
 						</a>
 
 						<!-- ICONES DE APOIO -->
-
-						<div class="add-to-whislist"></div>
 						<span class="on-sale"></span>
 
 						<div class="item-info">
 							<div class="title">
-								<!-- problema aqui: se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) -->
+								<!-- 
+									problema aqui:
+									se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) 
+								-->
 
-								<a href=""><h3>PAUL SMITH</h3></a>
+								<a href=""><h3 class="title-5">PAUL SMITH</h3></a>
 								<div class="tooltip">
 									<a href=""><i class="icon fa-solid fa-plus"></i></a>
-									<span>Add to cart</span>
+									<span class="text-tiny">Add to cart</span>
 								</div>
 							</div>
-							<div class="category"><a href="">ACCESSORIES</a></div>
-							<div class="price">R$ 45,00</div>
+							<div class="category text-small"><a href="">ACCESSORIES</a></div>
+							<div class="price title-5">R$ 45,00</div>
 						</div>
 					</li>
 
 					<li class="shop-item">
 						<a href="">
-							<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image4xxl23-235x300.jpg" alt="" />
+							<img class="image-active" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl-112-330x421.jpg" alt="" />
+							<img class="image-hover" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image4xxl23-330x421.jpg" alt="" />
+
+							<div class="add-to-wishlist">
+								<i class="fa-solid fa-heart"></i>
+							</div>
 						</a>
 
 						<!-- ICONES DE APOIO -->
-
-						<div class="add-to-whislist"></div>
-						<span class="on-sale"></span>
+						<span class="on-sale liquidacao">LIQUI <br />DAÇÃO</span>
 
 						<div class="item-info">
 							<div class="title">
-								<!-- problema aqui: se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) -->
+								<!-- 
+									problema aqui:
+									se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) 
+								-->
 
-								<a href=""><h3>PAUL SMITH</h3></a>
+								<a href=""><h3 class="title-5">PAUL SMITH</h3></a>
 								<div class="tooltip">
 									<a href=""><i class="icon fa-solid fa-plus"></i></a>
-									<span>Add to cart</span>
+									<span class="text-tiny">Add to cart</span>
 								</div>
 							</div>
-							<div class="category"><a href="">ACCESSORIES</a></div>
-							<div class="price">R$ 45,00</div>
+							<div class="category text-small"><a href="">ACCESSORIES</a></div>
+							<div class="price title-5">R$ 45,00</div>
 						</div>
 					</li>
 
 					<li class="shop-item">
 						<a href="">
-							<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image2xxl6-235x300.jpg" alt="" />
+							<img class="image-active" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl2-330x421.jpg" alt="" />
+							<img class="image-hover" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image2xxl6-330x421.jpg" alt="" />
+
+							<div class="add-to-wishlist">
+								<i class="fa-solid fa-heart"></i>
+							</div>
 						</a>
 
 						<!-- ICONES DE APOIO -->
-
-						<div class="add-to-whislist"></div>
-						<span class="on-sale"></span>
+						<span class="on-sale destaque">DESTAQUE</span>
 
 						<div class="item-info">
 							<div class="title">
-								<!-- problema aqui: se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) -->
+								<!-- 
+									problema aqui:
+									se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) 
+								-->
 
-								<a href=""><h3>PAUL SMITH</h3></a>
+								<a href=""><h3 class="title-5">PAUL SMITH</h3></a>
 								<div class="tooltip">
 									<a href=""><i class="icon fa-solid fa-plus"></i></a>
-									<span>Add to cart</span>
+									<span class="text-tiny">Add to cart</span>
 								</div>
 							</div>
-							<div class="category"><a href="">ACCESSORIES</a></div>
-							<div class="price">R$ 45,00</div>
+							<div class="category text-small"><a href="">ACCESSORIES</a></div>
+							<div class="price title-5">R$ 45,00</div>
 						</div>
 					</li>
 
 					<li class="shop-item">
 						<a href="">
-							<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image4xxl7-235x300.jpg" alt="" />
+							<img class="image-active" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl3-330x421.jpg" alt="" />
+							<img class="image-hover" src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image4xxl7-330x421.jpg" alt="" />
+
+							<div class="add-to-wishlist">
+								<i class="fa-solid fa-heart"></i>
+							</div>
 						</a>
 
 						<!-- ICONES DE APOIO -->
-
-						<div class="add-to-whislist"></div>
-						<span class="on-sale"></span>
+						<span class="on-sale esgotado">ESGOTADO</span>
 
 						<div class="item-info">
 							<div class="title">
-								<!-- problema aqui: se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) -->
+								<!-- 
+									problema aqui:
+									se o conteúdo do H3 for de duas linhas, o tooltip fica desalinhado porque está com position absolute. Precisa colocar um calc relativo ao tamanho do elemento pai (title) 
+								-->
 
-								<a href=""><h3>PAUL SMITH</h3></a>
+								<a href=""><h3 class="title-5">PAUL SMITH</h3></a>
 								<div class="tooltip">
 									<a href=""><i class="icon fa-solid fa-plus"></i></a>
-									<span>Add to cart</span>
+									<span class="text-tiny">Add to cart</span>
 								</div>
 							</div>
-							<div class="category"><a href="">ACCESSORIES</a></div>
-							<div class="price">R$ 45,00</div>
+							<div class="category text-small"><a href="">ACCESSORIES</a></div>
+							<div class="price title-5">R$ 45,00</div>
 						</div>
 					</li>
 				</ul>
@@ -200,7 +222,7 @@
 						<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl10-360x500.jpg" alt="" />
 					</div>
 					<div class="category-overlay"></div>
-					<div class="category-name"><span>MEN</span></div>
+					<div class="category-box"><span class="text-banner-tag">MEN</span></div>
 				</div>
 
 				<div class="category-item">
@@ -208,7 +230,7 @@
 						<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image2xxl39-360x500.jpg" alt="" />
 					</div>
 					<div class="category-overlay"></div>
-					<div class="category-name"><span>SHOES</span></div>
+					<div class="category-box"><span class="text-banner-tag">SHOES</span></div>
 				</div>
 
 				<div class="category-item">
@@ -216,7 +238,7 @@
 						<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl21-360x500.jpg" alt="" />
 					</div>
 					<div class="category-overlay"></div>
-					<div class="category-name"><span>WOMEN</span></div>
+					<div class="category-box"><span class="text-banner-tag">WOMEN</span></div>
 				</div>
 			</div>
 		</div>
@@ -226,13 +248,13 @@
 		<div class="promotional container">
 			<div class="container">
 				<div class="title">
-					<h2>
+					<h2 class="title-2">
 						NOVEMBER SALE
-						<small>FREE SHIPPING OVER $125 FOR INTERNATIONAL ORDERS</small>
+						<div class="text-regular">FREE SHIPPING OVER $125 FOR INTERNATIONAL ORDERS</div>
 					</h2>
 				</div>
 				<div class="cta">
-					<button>Shop Now</button>
+					<button class="text-button">Shop Now</button>
 				</div>
 			</div>
 		</div>
@@ -245,68 +267,68 @@
 		<div class="widgets container">
 			<div class="widget-list">
 				<div class="widget-item">
-					<h3>Featured</h3>
+					<h3 class="title-4">Featured</h3>
 					<ul>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl-110-235x300.jpg" alt="" />
-								<span class="name">Billionaire Boys</span>
+								<span class="name text-small">Billionaire Boys</span>
 							</a>
-							<span class="price">R$ 20,00</span>
+							<span class="price text-small">R$ 20,00</span>
 						</li>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl19-235x300.jpg" alt="" />
-								<span class="name">Coolkids</span>
+								<span class="name text-small">Coolkids</span>
 							</a>
-							<span class="price">R$ 3,00</span>
+							<span class="price text-small">R$ 3,00</span>
 						</li>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl15-235x300.jpg" alt="" />
-								<span class="name">Dialog</span>
+								<span class="name text-small">Dialog</span>
 							</a>
-							<span class="price">R$ 15,00</span>
+							<span class="price text-small">R$ 15,00</span>
 						</li>
 					</ul>
 				</div>
 
 				<div class="widget-item">
-					<h3>New Products</h3>
+					<h3 class="title-4">New Products</h3>
 					<ul>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl-11-235x300.jpg" alt="" />
-								<span class="name">Butterfly</span>
+								<span class="name text-small">Butterfly</span>
 							</a>
-							<span class="price">R$ 18,00</span>
+							<span class="price text-small">R$ 18,00</span>
 						</li>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl-14-235x300.jpg" alt="" />
-								<span class="name">Stonedetail</span>
+								<span class="name text-small">Stonedetail</span>
 							</a>
-							<span class="price">R$ 20,00</span>
+							<span class="price text-small">R$ 20,00</span>
 						</li>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl-235x300.jpg" alt="" />
-								<span class="name">Festival Stone</span>
+								<span class="name text-small">Festival Stone</span>
 							</a>
-							<span class="price">R$ 13,00</span>
+							<span class="price text-small">R$ 13,00</span>
 						</li>
 					</ul>
 				</div>
 
 				<div class="widget-item">
-					<h3>On-Sale</h3>
+					<h3 class="title-4">On-Sale</h3>
 					<ul>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl21-235x300.jpg" alt="" />
-								<span class="name">SweetHeart</span>
+								<span class="name text-small">SweetHeart</span>
 							</a>
-							<span class="price">
+							<span class="price text-small">
 								<del>R$ 15,00</del>
 								<ins>R$ 12,00</ins>
 							</span>
@@ -314,9 +336,9 @@
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl3-235x300.jpg" alt="" />
-								<span class="name">Asap Bag</span>
+								<span class="name text-small">Asap Bag</span>
 							</a>
-							<span class="price">
+							<span class="price text-small">
 								<del>R$ 34,00</del>
 								<ins>R$ 29,00</ins>
 							</span>
@@ -324,9 +346,9 @@
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl-111-235x300.jpg" alt="" />
-								<span class="name">Cheap Monday</span>
+								<span class="name text-small">Cheap Monday</span>
 							</a>
-							<span class="price">
+							<span class="price text-small">
 								<del>R$ 35,00</del>
 								<ins>R$ 20,00</ins>
 							</span>
@@ -335,28 +357,28 @@
 				</div>
 
 				<div class="widget-item">
-					<h3>Top Rated</h3>
+					<h3 class="title-4">Top Rated</h3>
 					<ul>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl1-235x300.jpg" alt="" />
-								<span class="name">Paul Smith</span>
+								<span class="name text-small">Paul Smith</span>
 							</a>
-							<span class="price">R$ 45,00</span>
+							<span class="price text-small">R$ 45,00</span>
 						</li>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl16-235x300.jpg" alt="" />
-								<span class="name">Jenga</span>
+								<span class="name text-small">Jenga</span>
 							</a>
-							<span class="price">R$ 35,00</span>
+							<span class="price text-small">R$ 35,00</span>
 						</li>
 						<li>
 							<a href="#">
 								<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/image1xxl11-235x300.jpg" alt="" />
-								<span class="name">Spitfire</span>
+								<span class="name text-small">Spitfire</span>
 							</a>
-							<span class="price">R$ 35,00</span>
+							<span class="price text-small">R$ 35,00</span>
 						</li>
 					</ul>
 				</div>
@@ -383,8 +405,8 @@
 			<div class="redundant">
 				<div class="container">
 					<div class="item">
-						<h3>What's hot</h3>
-						<div class="whats-hot">
+						<h3 class="text-regular">What's hot</h3>
+						<div class="text-small">
 							<ul>
 								<li><a href="">Discount voucher</a></li>
 								<li><a href="">Spring collection</a></li>
@@ -394,8 +416,8 @@
 						</div>
 					</div>
 					<div class="item">
-						<h3>Brands</h3>
-						<div class="brands">
+						<h3 class="text-regular">Brands</h3>
+						<div class="text-small">
 							<ul>
 								<li><a href="">Jack&Jones</a></li>
 								<li><a href="">Calvin Klein</a></li>
@@ -405,8 +427,8 @@
 						</div>
 					</div>
 					<div class="item">
-						<h3>Men Shop</h3>
-						<div class="men-shop">
+						<h3 class="text-regular">Men Shop</h3>
+						<div class="text-small">
 							<ul>
 								<li><a href="">Tops</a></li>
 								<li><a href="">Bottoms</a></li>
@@ -416,8 +438,8 @@
 						</div>
 					</div>
 					<div class="item">
-						<h3>Women Shop</h3>
-						<div class="women-shop">
+						<h3 class="text-regular">Women Shop</h3>
+						<div class="text-small">
 							<ul>
 								<li><a href="">Jeans</a></li>
 								<li><a href="">Dresses</a></li>
@@ -427,8 +449,8 @@
 						</div>
 					</div>
 					<div class="item">
-						<h3>Help</h3>
-						<div class="help">
+						<h3 class="text-regular">Help</h3>
+						<div class="text-small">
 							<ul>
 								<li><a href="">F.A.Q.</a></li>
 								<li><a href="">Shipping</a></li>
@@ -438,36 +460,36 @@
 						</div>
 					</div>
 					<div class="item">
-						<h3>Social</h3>
+						<h3 class="text-regular">Social</h3>
 						<div class="social">
 							<ul>
-								<li>
-									<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-instagram"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-youtube"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-vimeo"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-pinterest"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-dribbble"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fa-brands fa-snapchat"></i></a>
-								</li>
+								<a href="">
+									<li><i class="fa-brands fa-facebook-f"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-twitter"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-instagram"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-youtube"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-vimeo"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-pinterest"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-linkedin-in"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-dribbble"></i></li>
+								</a>
+								<a href="">
+									<li><i class="fa-brands fa-snapchat"></i></li>
+								</a>
 							</ul>
 						</div>
 					</div>
@@ -477,12 +499,12 @@
 			<div class="bottom-menu">
 				<div class="container">
 					<div class="support">
-						<div class="copyright">
+						<div class="copyright text-small">
 							© Copyright 2023
 							<span class="separator">|</span>
 							<a href="">Aurum Theme</a> by <a href="">Laborator</a>
 						</div>
-						<div class="legal">
+						<div class="legal text-tiny">
 							<ul>
 								<li><a href="">Privacy & Cookies</a></li>
 								<span class="separator">|</span>
@@ -498,17 +520,26 @@
 					</div>
 					<div class="logos">
 						<ul>
-							<li><a href="">logo-1</a></li>
-							<span class="separator">|</span>
-							<li><a href="">logo-2</a></li>
-							<span class="separator">|</span>
-							<li><a href="">logo-3</a></li>
-							<span class="separator">|</span>
-							<li><a href="">logo-4</a></li>
-							<span class="separator">|</span>
-							<li><a href="">logo-5</a></li>
-							<span class="separator">|</span>
-							<li><a href="">logo-6</a></li>
+							<li>
+								<a href="">
+									<img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2016/04/ups.png" alt="" width="19" height="22" />
+								</a>
+							</li>
+							<li>
+								<a href=""><img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2016/04/dhl.png" alt="" width="73" height="10" /></a>
+							</li>
+							<li>
+								<a href=""><img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2016/04/fedex.png" alt="" width="52" height="14" /></a>
+							</li>
+							<li>
+								<a href=""><img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2016/04/visa.png" alt="" width="38" height="11" /></a>
+							</li>
+							<li>
+								<a href=""><img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2016/04/paypal.png" alt="" width="55" height="15" /></a>
+							</li>
+							<li>
+								<a href=""><img src="https://themes.laborator.co/aurum/fashion/wp-content/uploads/2016/04/mastercard.png" alt="" width="28" height="17" /></a>
+							</li>
 						</ul>
 					</div>
 				</div>

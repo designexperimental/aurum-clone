@@ -63,7 +63,8 @@ body {
 	font-family: "Roboto Condensed", sans-serif;
 	color: #222;
 	font-size: 16px;
-	line-height: 1.5;
+	/* line-height: 1.5; */
+	font-weight: 300;
 }
 
 h1,
@@ -72,7 +73,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 500;
 	line-height: 1.2;
 }
 
@@ -117,4 +117,101 @@ ins {
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
+}
+
+/* ---------- DISPLAY ---------- */
+
+.esconde {
+	display: none;
+}
+
+/* ---------- STYLE GUIDE: FONTS ---------- */
+
+/* TITLES */
+
+.title-1,
+.title-2,
+.title-3,
+.title-4,
+.title-5 {
+	text-transform: uppercase;
+}
+
+.title-1 {
+	font-size: 2.5rem;
+	line-height: 3rem;
+}
+
+.title-2 {
+	font-size: 2rem;
+	line-height: 2.25rem;
+}
+
+.title-3 {
+	font-size: 1.75rem;
+	line-height: 2rem;
+}
+
+.title-4 {
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+}
+
+.title-5 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+/* BODY */
+
+.text-tiny {
+	/* 12/16 */
+	font-size: 0.75rem;
+	line-height: 1rem;
+}
+
+.text-small,
+.text-button {
+	/* 14/20 */
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+.text-regular,
+.text-strike {
+	/* 16/20 */
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.text-strike {
+	text-decoration: line-through;
+}
+
+.text-button {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+}
+
+.text-banner-tag {
+	/* 28/32 */
+	font-size: 1.75rem;
+	line-height: 2rem;
+}
+
+/* ON-SALE */
+
+.on-sale {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	line-height: 1rem;
+}
+
+.liquidacao {
+	font-size: 12px;
+}
+
+.destaque,
+.esgotado {
+	font-size: 10px;
 }
