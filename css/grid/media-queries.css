@@ -5,37 +5,53 @@
 	box-sizing: border-box;
 	font-family: Arial, Verdana, sans-serif;
 	color: #555;
+	text-align: center;
 }
 
 .container:first-child {
-	margin-top: 10px;
+	margin-top: 12px;
+}
+
+li {
+	display: inline-block;
 }
 
 /* ----- apagar antes daqui ----- */
 
 .container {
-	margin: 0 auto;
-	padding: 0 15px;
-	overflow: auto;
-}
-
-[class*="col"] {
-	/* trocar o float pelo flex */
-	float: left;
 	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-bottom: 10px;
+	margin: 0 auto;
+	padding: 0 12px;
+	/* border: 1px solid red; */
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row > * {
+	width: 100%;
+	max-width: 100%;
+	flex-shrink: 0;
+}
+
+.col {
+	flex: 1 0 0%;
+}
+
+/* seleciona todos os elementos com a classe "col" */
+[class*="col"] {
+	width: 100%;
+	padding: 0 12px;
+	margin-bottom: 12px;
+	flex-wrap: wrap;
+}
+
+/* seleciona todos os filhos de qualquer elemento com a classe "col" */
 [class*="col"] * {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding: 12px 0;
 	background: #fff;
-}
-
-[class*="logo"] {
-	display: none;
 }
 
 /* MOBILE FIRST */
@@ -47,6 +63,7 @@
 	[class*="logo-xs"] {display: block;}
 
 	body {background-color: lightblue;}
+	.container {min-width: 360px;}
 	.col-xs-1 {max-width: 8.333333%;}
 	.col-xs-2 {max-width: 16.666667%;}
 	.col-xs-3 {max-width: 25%;}
@@ -59,6 +76,7 @@
 	.col-xs-10 {max-width: 83.333333%;}
 	.col-xs-11 {max-width: 91.666667%;}
 	.col-xs-12 {max-width: 100%;}
+
 }
 
 /* Dispositivos Small (SM) : smartphones em modo paisagem */
@@ -66,6 +84,7 @@
 @media (min-width: 576px) {
 	[class*="logo"] {display: none;}
 	[class*="logo-sm"] {display: block;}
+
 	body {background-color: lightcoral;}
 	.container {max-width: 540px;}
 	.col-sm-1 {max-width: 8.333333%;}
@@ -87,6 +106,7 @@
 @media (min-width: 768px) {
 	[class*="logo"] {display: none;}
 	[class*="logo-md"] {display: block;}
+
 	body {background-color: lightgray;}
 	.container {max-width: 720px;}
 	.col-md-1 {max-width: 8.333333%;}
