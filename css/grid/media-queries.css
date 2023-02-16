@@ -1,4 +1,4 @@
-* {
+/* * {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -14,7 +14,7 @@
 
 li {
 	display: inline-block;
-}
+} */
 
 /* ----- apagar antes daqui ----- */
 
@@ -46,12 +46,13 @@ li {
 	padding: 0 12px;
 	margin-bottom: 12px;
 	flex-wrap: wrap;
+	border: 1px solid #e3e3e3;
 }
 
 /* seleciona todos os filhos de qualquer elemento com a classe "col" */
 [class*="col"] * {
 	padding: 12px 0;
-	background: #fff;
+	background-color: #fff;
 }
 
 /* MOBILE FIRST */

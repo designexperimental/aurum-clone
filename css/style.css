@@ -1,719 +1,779 @@
-/* ---------- TOP MENU ---------- */
-
-.top-menu {
-	background-color: #222;
-	color: #afafaf;
-}
-
-.top-menu .container {
-	padding: 12px 0;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.top-menu ul li {
-	display: inline;
-}
-
-.top-menu a {
-	color: #afafaf;
-	text-decoration: none;
-}
-
-.top-menu a:hover {
-	color: white;
-}
-
-.top-menu .separator {
-	margin: 0 10px;
-}
-
-.top-menu .flag {
-	vertical-align: middle;
-	margin-left: 5px;
-	width: 16px;
-	height: 16px;
-}
-
-/* ---------- HEADER MENU ---------- */
-.main-menu {
-	border-bottom: 1px solid #eee;
-}
-
-.main-menu .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.main-menu .logo {
-	display: flex;
-	align-items: center;
-}
-
-.main-menu .logo img {
-	height: 20px;
-}
-
-.main-menu nav {
-	margin-left: 60px;
-}
-
-.main-menu nav ul li {
-	display: inline-block;
-
-	/* compensação do alinhamento vertical */
-	padding: 18px 25px 30px 15px;
-}
-
-.main-menu nav ul li:hover {
-	background-color: #f7f7f7;
-	cursor: pointer;
-}
-
-/* muda a cor texto no hover */
-.main-menu nav ul li:hover a {
-	color: #8b86c0;
-}
-
-.main-menu nav ul li a {
-	color: #4d4d4d;
-}
-
-.main-menu nav ul li a.active {
-	padding-bottom: 2px;
-	border-bottom: 2px solid black;
-}
-
-/* ---------- ICONS ---------- */
-
-.main-menu .icon i {
-	font-size: 24px;
-	margin-left: 30px;
-}
-
-/* ---------- BANNER ---------- */
-
-.banner {
-	margin-top: 24px;
-	height: 500px;
-
-	background-image: url("https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/bg-2.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% auto;
-}
-
-.banner .container {
-	border: 1px solid red;
-	height: 100%;
-}
-
-/* ---------- TRENDING ---------- */
-
-.trending {
-	margin-top: 80px;
-}
-
-.trending .title-2 span {
-	display: block;
-}
-
-.trending .title-2 .text-regular {
-	margin: 4px 0 16px 0;
-}
-
-.trending .dash {
-	width: 16px;
-	height: 2px;
-	background-color: #222;
-}
-
-/* TRENDING - ITEM */
-
-.trending .shop-list {
-	margin-top: 60px;
-}
-
-.trending .shop-list ul {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.trending .shop-list ul li {
-	width: 263px;
-	height: auto;
-}
-
-/* TRENDING - IMAGE */
-
-.shop-item img {
-	background-color: #eee;
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.shop-item .image-active {
-	display: block;
-	/* visibility: hidden; */
-}
-
-.shop-item .image-hover {
-	display: none;
-}
-
-/* TRENDING - INFOS */
-
-.item-info {
-	padding: 24px 20px 0;
-}
-
-.item-info .title {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.item-info .title a:hover h3 {
-	text-decoration: underline;
-}
-
-.item-info .title a {
-	color: #222;
-}
-
-/* TRENDING - TOOLTIP */
-
-.item-info .title {
-	position: relative;
-}
-
-.item-info .tooltip {
-	display: flex;
-	align-items: center;
-}
-
-div.tooltip span {
-	background-color: black;
-	color: white;
-	text-transform: uppercase;
-
-	position: absolute;
-	z-index: 0;
-	right: 0;
-	margin-right: 24px;
-	padding: 4px 10px;
-	visibility: hidden;
-}
-
-/* triangulo direito */
-div.tooltip span:after {
-	content: "";
-	position: absolute;
-
-	width: 0;
-	height: 0;
-
-	right: -5px;
-	bottom: 50%;
-	margin-bottom: -5px;
-
-	border-left: 5px solid black;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-}
-
-div:hover.tooltip span {
-	visibility: visible;
-	top: 0;
-	right: 0;
-	z-index: 1;
-}
-
-/* https://horadecodar.com.br/2020/05/05/como-fazer-um-tooltip-com-css-puro/ */
-/* https://www.w3schools.com/css/css_tooltip.asp */
-
-/* TRENDING - CATEGORY */
-
-.item-info .category {
-	margin-top: 4px;
-}
-
-.item-info .category a {
-	color: #888;
-}
-
-.item-info .category a:hover {
-	text-decoration: underline;
-}
-
-/* TRENDING - PRICE */
-
-.item-info .price {
-	margin-top: 24px;
-	color: #333;
-}
-
-/* ---------- ICONES DE APOIO ---------- */
-
-/* ON-SALE */
-
-.shop-item {
-	position: relative;
-}
-
-.on-sale {
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	color: white;
-	text-align: center;
-	position: absolute;
-	top: -16px;
-	right: -20px;
-	z-index: 1;
-}
-
-.liquidacao {
-	background-color: #222;
-	padding: 14px 0;
-}
-
-.destaque {
-	background-color: #7b599b;
-	padding: 22px 0;
-}
-
-.esgotado {
-	background-color: #626262;
-	padding: 22px 0;
-}
-
-/* WISHLIST */
-
-.add-to-wishlist {
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	opacity: 0;
-	color: #999;
-	transition: all 200ms ease-in-out;
-}
-
-.add-to-wishlist:hover {
-	color: #555;
-}
-
-.shop-item:hover .add-to-wishlist {
-	opacity: 1;
-	transition: all 500ms ease-in-out;
-}
-
-/* CONTROLES */
-
-.shop-list ul {
-	position: relative;
-}
-
-.control {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: #222;
-	border: none;
-	color: white;
-	display: block;
-
-	opacity: 0;
-	transition: opacity 200ms ease-in-out;
-	z-index: 1;
-
-	cursor: pointer;
-}
-
-.previous {
-	position: absolute;
-	top: 50%;
-	left: -20px;
-
-	background: #222 url(https://themes.laborator.co/aurum/fashion/wp-content/themes/aurum/assets/images/arrow-left-white.svg) no-repeat center center;
-	background-size: 24px;
-}
-
-.next {
-	position: absolute;
-	top: 50%;
-	right: -20px;
-
-	background: #222 url(https://themes.laborator.co/aurum/fashion/wp-content/themes/aurum/assets/images/arrow-right-white.svg) no-repeat center center;
-	background-size: 24px;
-}
-
-.shop-list:hover .previous,
-.shop-list:hover .next {
-	opacity: 1;
-	transition: all 200ms ease-in-out;
-}
-
-.previous:hover,
-.next:hover {
-	background-color: #666;
-}
-
-/* ---------- CATEGORIES ---------- */
-
-.categories {
-	margin-top: 80px;
-}
-
-.category-list {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.category-item {
-	width: 360px;
-	height: 500px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	/* faz a máscara no item */
-	overflow: hidden;
-
-	cursor: pointer;
-	position: relative;
-}
-
-.category-item div {
-	position: absolute;
-}
-
-.category-image {
-	width: 100%;
-	height: 100%;
-	z-index: 0;
-
-	/* define o estado do efeito inicial */
-	transform: scale(1);
-	transition: all 0.5s ease-out;
-}
-
-.category-item:hover .category-image {
-	/* define o estado do efeito final */
-	transform: scale(1.1);
-	transition: all 0.5s ease-out;
-}
-
-.category-overlay {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	z-index: 1;
-}
-
-.category-box {
-	padding: 8px 0;
-	border: 2px solid white;
-	color: white;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	z-index: 2;
-}
-
-.category-box span {
-	border-top: 2px solid white;
-	border-bottom: 2px solid white;
-	padding: 10px 12px;
-}
-
-/* ---------- PROMOTIONAL ---------- */
-
-.promotional {
-	margin-top: 80px;
-	border: 1px solid #eee;
-	color: #333;
-}
-
-.promotional .container {
-	border: 1px solid #eee;
-	padding: 40px 56px;
-
-	/* espaço entre as bordas */
-	margin: 4px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.promotional .text-regular {
-	margin-top: 16px;
-}
-
-.promotional button {
-	padding: 8px 16px;
-	border: 0;
-	border-radius: 2px;
-	background-color: black;
-	color: white;
-
-	cursor: pointer;
-	vertical-align: middle;
-}
-
-.promotional button:hover {
-	background-color: #404040;
-}
-
-/* ---------- WIDGETS ---------- */
-
-.widgets {
-	margin-top: 80px;
-}
-
-.widget-list {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.widget-item {
-	width: 263px;
-	height: auto;
-	padding: 24px 30px;
-	border: 1px solid #eee;
-}
-
-/* WIDGETN ITEM CONTENT */
-
-.widget-item h3 {
-	margin: 0 0 20px;
-	padding: 0 0 20px;
-	border-bottom: 1px solid #eee;
-	box-shadow: 0 1px 0 #fff, 0 2px 0 #eee;
-
-	color: #222;
-	text-transform: uppercase;
-}
-
-.widget-item ul li {
-	display: block;
-	width: 100%;
-	margin: 10px 0;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #eee;
-
-	/* se não tiver o pseudo-elemento, ativar o overflow */
-	/* overflow: hidden; */
-}
-
-/* pseudo-elemento para limpar o float da img */
-.widget-item ul li::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-/* limpar os espaços e borda do último filho */
-.widget-item ul li:last-child {
-	border-bottom: none;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-
-/*  */
-
-.widget-item a {
-	/* empurra o preço pra baixo */
-	display: block;
-}
-
-.widget-item a:hover {
-	text-decoration: underline;
-}
-
-.widget-item img {
-	/* border: 1px solid red; */
-	width: 50px;
-	height: auto;
-	/* height: 64px; */
-
-	display: block;
-	float: left;
-
-	margin-right: 10px;
-
-	/* margin-left: -60px; */
-
-	/* vertical-align: middle; */
-}
-
-.widget-item .name {
-	color: #4d4d4d;
-	text-transform: uppercase;
-}
-
-.widget-item .price {
-	color: #afafaf;
-	text-transform: uppercase;
-}
-
-/* ---------- CAROUSEL ---------- */
-
-.carousel {
-	margin-top: 80px;
-}
-
-.carousel .container ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.carousel .container ul li {
-	margin: 0 15px;
-}
-
-.carousel img {
-	height: 60px;
-}
-
-/* ---------- FOOTER ---------- */
-
-footer {
-	margin-top: 80px;
-	padding: 40px;
-	background-color: #222;
-	color: #959595;
-}
-
-footer h3 {
-	color: #eee;
-}
-
-/* REDUNDANT */
-
-.redundant .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: initial;
-}
-
-.redundant .item {
-	width: 100%;
-	text-transform: uppercase;
-}
-
-.redundant .item a {
-	color: #959595;
-}
-
-.redundant .item .text-small a:hover {
-	color: white;
-	text-decoration: underline;
-}
-
-.redundant .item div {
-	margin-top: 12px;
-}
-
-/* SOCIAL */
-
-.redundant .social ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.redundant .social ul li {
-	background-color: #3a3a3a;
-
-	width: 24px;
-	height: 24px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	margin-right: 5px;
-	margin-bottom: 5px;
-}
-
-.redundant .social ul li:hover {
-	color: white;
-	transition: color 200ms ease-in-out;
-}
-
-/* BOTTOM-MENU */
-
-.bottom-menu .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	border-top: 1px solid #3a3a3a;
-	margin-top: 40px;
-	padding-top: 40px;
-}
-
-.bottom-menu ul li {
-	display: inline;
-}
-
-.bottom-menu a {
-	color: #959595;
-	text-decoration: none;
-}
-
-.bottom-menu a:hover {
-	color: white;
-}
-
-.bottom-menu .separator {
-	margin: 5px;
-}
-
-/* COPY */
-
-footer .copyright a {
-	color: #4d4d4d;
-}
-
-footer .copyright a:hover {
-	color: #7b599b;
-	text-decoration: underline;
-}
-
-footer .legal {
-	margin-top: 8px;
-}
-
-/* PAYMENT LOGOS */
-
-.bottom-menu .logos ul {
-	display: flex;
-	align-items: center;
-}
-
-.bottom-menu .logos img {
-	margin-left: 20px;
-}
-
-.bottom-menu .logos a {
-	opacity: 0.5;
-	text-decoration: none;
-}
-
-.bottom-menu .logos a:hover {
-	opacity: 1;
+@media (max-width: 575.98px) {
+	/* ---------- TOP MENU ---------- */
+	.top-menu {
+		display: none;
+	}
+
+	/* ---------- HEADER MENU ---------- */
+
+	.main-menu {
+		background-color: white;
+
+		border: 1px solid red;
+
+		padding: 10px 0;
+
+		height: 72px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-menu .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-menu nav {
+		display: none;
+	}
+
+	.main-menu .logo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-menu .logo img {
+		height: 20px;
+	}
+
+	.main-menu .icon i {
+		font-size: 24px;
+		margin-left: 30px;
+	}
+
+	.main-menu .icon i.fa-magnifying-glass {
+		display: none;
+	}
+
+	/* ---------- EMPURRA ---------- */
+
+	header {
+		margin-bottom: 500px;
+	}
+}
+
+@media (min-width: 576px) {
+	/* ---------- TOP MENU ---------- */
+
+	.top-menu {
+		background-color: #222;
+		color: #afafaf;
+	}
+
+	.top-menu .container {
+		padding: 12px 0;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.top-menu ul li {
+		display: inline;
+	}
+
+	.top-menu a {
+		color: #afafaf;
+		text-decoration: none;
+	}
+
+	.top-menu a:hover {
+		color: white;
+	}
+
+	.top-menu .separator {
+		margin: 0 10px;
+	}
+
+	.top-menu .flag {
+		vertical-align: middle;
+		margin-left: 5px;
+		width: 16px;
+		height: 16px;
+	}
+
+	/* ---------- HEADER MENU ---------- */
+	.main-menu {
+		border-bottom: 1px solid #eee;
+	}
+
+	.main-menu .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.main-menu .logo {
+		display: flex;
+		align-items: center;
+	}
+
+	.main-menu .logo img {
+		height: 20px;
+	}
+
+	.main-menu nav {
+		margin-left: 60px;
+	}
+
+	.main-menu nav ul li {
+		display: inline-block;
+
+		/* compensação do alinhamento vertical */
+		padding: 18px 25px 30px 15px;
+	}
+
+	.main-menu nav ul li:hover {
+		background-color: #f7f7f7;
+		cursor: pointer;
+	}
+
+	/* muda a cor texto no hover */
+	.main-menu nav ul li:hover a {
+		color: #8b86c0;
+	}
+
+	.main-menu nav ul li a {
+		color: #4d4d4d;
+	}
+
+	.main-menu nav ul li a.active {
+		padding-bottom: 2px;
+		border-bottom: 2px solid black;
+	}
+
+	/* ---------- ICONS ---------- */
+
+	.main-menu .icon i {
+		font-size: 24px;
+		margin-left: 30px;
+	}
+
+	/* ---------- BANNER ---------- */
+
+	.banner {
+		margin-top: 24px;
+		height: 500px;
+
+		background-image: url("https://themes.laborator.co/aurum/fashion/wp-content/uploads/2014/11/bg-2.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 100% auto;
+	}
+
+	.banner .container {
+		border: 1px solid red;
+		height: 100%;
+	}
+
+	/* ---------- TRENDING ---------- */
+
+	.trending {
+		margin-top: 80px;
+	}
+
+	.trending .title-2 span {
+		display: block;
+	}
+
+	.trending .title-2 .text-regular {
+		margin: 4px 0 16px 0;
+	}
+
+	.trending .dash {
+		width: 16px;
+		height: 2px;
+		background-color: #222;
+	}
+
+	/* TRENDING - ITEM */
+
+	.trending .shop-list {
+		margin-top: 60px;
+	}
+
+	.trending .shop-list ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.trending .shop-list ul li {
+		width: 263px;
+		height: auto;
+	}
+
+	/* TRENDING - IMAGE */
+
+	.shop-item img {
+		background-color: #eee;
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.shop-item .image-active {
+		display: block;
+		/* visibility: hidden; */
+	}
+
+	.shop-item .image-hover {
+		display: none;
+	}
+
+	/* TRENDING - INFOS */
+
+	.item-info {
+		padding: 24px 20px 0;
+	}
+
+	.item-info .title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.item-info .title a:hover h3 {
+		text-decoration: underline;
+	}
+
+	.item-info .title a {
+		color: #222;
+	}
+
+	/* TRENDING - TOOLTIP */
+
+	.item-info .title {
+		position: relative;
+	}
+
+	.item-info .tooltip {
+		display: flex;
+		align-items: center;
+	}
+
+	div.tooltip span {
+		background-color: black;
+		color: white;
+		text-transform: uppercase;
+
+		position: absolute;
+		z-index: 0;
+		right: 0;
+		margin-right: 24px;
+		padding: 4px 10px;
+		visibility: hidden;
+	}
+
+	/* triangulo direito */
+	div.tooltip span:after {
+		content: "";
+		position: absolute;
+
+		width: 0;
+		height: 0;
+
+		right: -5px;
+		bottom: 50%;
+		margin-bottom: -5px;
+
+		border-left: 5px solid black;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+	}
+
+	div:hover.tooltip span {
+		visibility: visible;
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	/* https://horadecodar.com.br/2020/05/05/como-fazer-um-tooltip-com-css-puro/ */
+	/* https://www.w3schools.com/css/css_tooltip.asp */
+
+	/* TRENDING - CATEGORY */
+
+	.item-info .category {
+		margin-top: 4px;
+	}
+
+	.item-info .category a {
+		color: #888;
+	}
+
+	.item-info .category a:hover {
+		text-decoration: underline;
+	}
+
+	/* TRENDING - PRICE */
+
+	.item-info .price {
+		margin-top: 24px;
+		color: #333;
+	}
+
+	/* ---------- ICONES DE APOIO ---------- */
+
+	/* ON-SALE */
+
+	.shop-item {
+		position: relative;
+	}
+
+	.on-sale {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		color: white;
+		text-align: center;
+		position: absolute;
+		top: -16px;
+		right: -20px;
+		z-index: 1;
+	}
+
+	.liquidacao {
+		background-color: #222;
+		padding: 14px 0;
+	}
+
+	.destaque {
+		background-color: #7b599b;
+		padding: 22px 0;
+	}
+
+	.esgotado {
+		background-color: #626262;
+		padding: 22px 0;
+	}
+
+	/* WISHLIST */
+
+	.add-to-wishlist {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		opacity: 0;
+		color: #999;
+		transition: all 200ms ease-in-out;
+	}
+
+	.add-to-wishlist:hover {
+		color: #555;
+	}
+
+	.shop-item:hover .add-to-wishlist {
+		opacity: 1;
+		transition: all 500ms ease-in-out;
+	}
+
+	/* CONTROLES */
+
+	.shop-list ul {
+		position: relative;
+	}
+
+	.control {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: #222;
+		border: none;
+		color: white;
+		display: block;
+
+		opacity: 0;
+		transition: opacity 200ms ease-in-out;
+		z-index: 1;
+
+		cursor: pointer;
+	}
+
+	.previous {
+		position: absolute;
+		top: 50%;
+		left: -20px;
+
+		background: #222 url(https://themes.laborator.co/aurum/fashion/wp-content/themes/aurum/assets/images/arrow-left-white.svg) no-repeat center center;
+		background-size: 24px;
+	}
+
+	.next {
+		position: absolute;
+		top: 50%;
+		right: -20px;
+
+		background: #222 url(https://themes.laborator.co/aurum/fashion/wp-content/themes/aurum/assets/images/arrow-right-white.svg) no-repeat center center;
+		background-size: 24px;
+	}
+
+	.shop-list:hover .previous,
+	.shop-list:hover .next {
+		opacity: 1;
+		transition: all 200ms ease-in-out;
+	}
+
+	.previous:hover,
+	.next:hover {
+		background-color: #666;
+	}
+
+	/* ---------- CATEGORIES ---------- */
+
+	.categories {
+		margin-top: 80px;
+	}
+
+	.category-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.category-item {
+		width: 360px;
+		height: 500px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		/* faz a máscara no item */
+		overflow: hidden;
+
+		cursor: pointer;
+		position: relative;
+	}
+
+	.category-item div {
+		position: absolute;
+	}
+
+	.category-image {
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+
+		/* define o estado do efeito inicial */
+		transform: scale(1);
+		transition: all 0.5s ease-out;
+	}
+
+	.category-item:hover .category-image {
+		/* define o estado do efeito final */
+		transform: scale(1.1);
+		transition: all 0.5s ease-out;
+	}
+
+	.category-overlay {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 1;
+	}
+
+	.category-box {
+		padding: 8px 0;
+		border: 2px solid white;
+		color: white;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		z-index: 2;
+	}
+
+	.category-box span {
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+		padding: 10px 12px;
+	}
+
+	/* ---------- PROMOTIONAL ---------- */
+
+	.promotional {
+		margin-top: 80px;
+		border: 1px solid #eee;
+		color: #333;
+	}
+
+	.promotional .container {
+		border: 1px solid #eee;
+		padding: 40px 56px;
+
+		/* espaço entre as bordas */
+		margin: 4px;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.promotional .text-regular {
+		margin-top: 16px;
+	}
+
+	.promotional button {
+		padding: 8px 16px;
+		border: 0;
+		border-radius: 2px;
+		background-color: black;
+		color: white;
+
+		cursor: pointer;
+		vertical-align: middle;
+	}
+
+	.promotional button:hover {
+		background-color: #404040;
+	}
+
+	/* ---------- WIDGETS ---------- */
+
+	.widgets {
+		margin-top: 80px;
+	}
+
+	.widget-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.widget-item {
+		width: 263px;
+		height: auto;
+		padding: 24px 30px;
+		border: 1px solid #eee;
+	}
+
+	/* WIDGETN ITEM CONTENT */
+
+	.widget-item h3 {
+		margin: 0 0 20px;
+		padding: 0 0 20px;
+		border-bottom: 1px solid #eee;
+		box-shadow: 0 1px 0 #fff, 0 2px 0 #eee;
+
+		color: #222;
+		text-transform: uppercase;
+	}
+
+	.widget-item ul li {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eee;
+
+		/* se não tiver o pseudo-elemento, ativar o overflow */
+		/* overflow: hidden; */
+	}
+
+	/* pseudo-elemento para limpar o float da img */
+	.widget-item ul li::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	/* limpar os espaços e borda do último filho */
+	.widget-item ul li:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	/*  */
+
+	.widget-item a {
+		/* empurra o preço pra baixo */
+		display: block;
+	}
+
+	.widget-item a:hover {
+		text-decoration: underline;
+	}
+
+	.widget-item img {
+		/* border: 1px solid red; */
+		width: 50px;
+		height: auto;
+		/* height: 64px; */
+
+		display: block;
+		float: left;
+
+		margin-right: 10px;
+
+		/* margin-left: -60px; */
+
+		/* vertical-align: middle; */
+	}
+
+	.widget-item .name {
+		color: #4d4d4d;
+		text-transform: uppercase;
+	}
+
+	.widget-item .price {
+		color: #afafaf;
+		text-transform: uppercase;
+	}
+
+	/* ---------- CAROUSEL ---------- */
+
+	.carousel {
+		margin-top: 80px;
+	}
+
+	.carousel .container ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.carousel .container ul li {
+		margin: 0 15px;
+	}
+
+	.carousel img {
+		height: 60px;
+	}
+
+	/* ---------- FOOTER ---------- */
+
+	footer {
+		margin-top: 80px;
+		padding: 40px;
+		background-color: #222;
+		color: #959595;
+	}
+
+	footer h3 {
+		color: #eee;
+	}
+
+	/* REDUNDANT */
+
+	.redundant .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: initial;
+	}
+
+	.redundant .item {
+		width: 100%;
+		text-transform: uppercase;
+	}
+
+	.redundant .item a {
+		color: #959595;
+	}
+
+	.redundant .item .text-small a:hover {
+		color: white;
+		text-decoration: underline;
+	}
+
+	.redundant .item div {
+		margin-top: 12px;
+	}
+
+	/* SOCIAL */
+
+	.redundant .social ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.redundant .social ul li {
+		background-color: #3a3a3a;
+
+		width: 24px;
+		height: 24px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+
+	.redundant .social ul li:hover {
+		color: white;
+		transition: color 200ms ease-in-out;
+	}
+
+	/* BOTTOM-MENU */
+
+	.bottom-menu .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		border-top: 1px solid #3a3a3a;
+		margin-top: 40px;
+		padding-top: 40px;
+	}
+
+	.bottom-menu ul li {
+		display: inline;
+	}
+
+	.bottom-menu a {
+		color: #959595;
+		text-decoration: none;
+	}
+
+	.bottom-menu a:hover {
+		color: white;
+	}
+
+	.bottom-menu .separator {
+		margin: 5px;
+	}
+
+	/* COPY */
+
+	footer .copyright a {
+		color: #4d4d4d;
+	}
+
+	footer .copyright a:hover {
+		color: #7b599b;
+		text-decoration: underline;
+	}
+
+	footer .legal {
+		margin-top: 8px;
+	}
+
+	/* PAYMENT LOGOS */
+
+	.bottom-menu .logos ul {
+		display: flex;
+		align-items: center;
+	}
+
+	.bottom-menu .logos img {
+		margin-left: 20px;
+	}
+
+	.bottom-menu .logos a {
+		opacity: 0.5;
+		text-decoration: none;
+	}
+
+	.bottom-menu .logos a:hover {
+		opacity: 1;
+	}
 }
